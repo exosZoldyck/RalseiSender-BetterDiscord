@@ -2,7 +2,7 @@
  * @name RalseiSender
  * @author exosZoldyck
  * @description Adds a menu that lets you send a random image of Ralsei
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 /*
@@ -107,8 +107,10 @@ let movement;
 
 function addButton(){
   if (document.getElementById("ralseiBtn") != undefined) return;
-  const buttonsPannel = document.querySelector("div.buttons__7ecff");
-  const stickerButton = document.querySelectorAll(".buttonContainer_ff1010")[1];
+  const buttonsPannel = document.querySelector("div.buttons_d0696b");            // Needs to be updated regularly
+  const stickerButton = document.querySelectorAll(".buttonContainer_d0696b")[1]; //
+
+  if (buttonsPannel == undefined) throw "ERROR: Unable to find button parent object!";
   
   const openMenuButton = document.createElement("button");
   openMenuButton.id = "ralseiBtn";
@@ -121,7 +123,7 @@ function addButton(){
   buttonImg.id = "ralseiBtn_Img"
   buttonImg.src = buttonIcon1;
 
-  if (buttonsPannel != undefined) buttonsPannel.append(openMenuButton);
+  buttonsPannel.append(openMenuButton);
   if (stickerButton != undefined) stickerButton.after(openMenuButton);
   openMenuButton.append(buttonImg);
 }
@@ -137,7 +139,7 @@ function openRalseiMenu(){
     return;
   }
 
-  const chatContainer = document.querySelector("main.chatContent_f087cb");
+  const chatContainer = document.querySelector("main.chatContent_a7d72e"); // Needs to be updated regularly
 
   const menu = document.createElement("div");
   menu.id = "ralseiMenu"
