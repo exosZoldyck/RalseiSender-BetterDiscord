@@ -2,7 +2,10 @@
  * @name RalseiSender
  * @author exosZoldyck
  * @description Adds a menu that lets you send a random image of Ralsei
- * @version 1.0.2
+ * @version 1.1.0
+ * @website https://wallebot.com/ralsei
+ * @source https://github.com/exosZoldyck/RalseiSender-BetterDiscord
+ * @updateUrl https://raw.githubusercontent.com/exosZoldyck/RalseiSender-BetterDiscord/main/RalseiSender.plugin.js
  */
 
 /*
