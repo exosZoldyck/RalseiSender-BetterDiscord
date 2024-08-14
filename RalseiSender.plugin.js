@@ -2,7 +2,7 @@
  * @name RalseiSender
  * @author exosZoldyck
  * @description Adds a menu that lets you send a random image of Ralsei
- * @version 1.1.0
+ * @version 1.1.1
  * @website https://wallebot.com/ralsei
  * @source https://github.com/exosZoldyck/RalseiSender-BetterDiscord
  * @updateUrl https://raw.githubusercontent.com/exosZoldyck/RalseiSender-BetterDiscord/main/RalseiSender.plugin.js
@@ -53,6 +53,30 @@
          **@@@@@@@@@@**  **%@@@@@@@@@**.        
          ***********+      =***********.        
 */
+
+const config = {
+  info: {
+      name: "RalseiSender",
+      authors: [
+          {
+              name: "exosZoldyck"
+          }
+      ],
+      version: "1.1.1",
+      description: "Adds a menu that lets you send a random image of Ralsei",
+      github_raw: "https://raw.githubusercontent.com/exosZoldyck/RalseiSender-BetterDiscord/main/RalseiSender.plugin.js",
+  },
+  changelog: [
+      {
+          title: "New version",
+          type: "fixed",
+          items: [
+              "Added autoupdate support."
+          ]
+      }
+  ],
+  defaultConfig: []
+};
 
 module.exports = class RalseiSender {
   start() {
